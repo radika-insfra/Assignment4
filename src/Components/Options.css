@@ -1,0 +1,19 @@
+.option-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.optionItem{
+  border-radius: 8px;
+  padding: 7px 7px;
+  border-color: black;
+  background-color: black;
+  color: white;
+  margin-left: 5px;
+}
+
+.optionItem:hover{
+  color: black;
+  background-color: white;
+}

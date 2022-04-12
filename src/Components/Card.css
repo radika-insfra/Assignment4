@@ -1,7 +1,6 @@
 .Card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     width: 350px;
+    padding: 2px 16px;
     height: 450px;
 }
 
@@ -9,59 +8,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.Container {
-    padding: 2px 16px;
-}
-
-.xs-button{
-    border-radius: 8px;
-    padding: 7px 7px;
-    border-color: black;
-    background-color: white;
-    
-    /* text-emphasis-color: white; */
-}
-
-.s-button{
-    border-radius: 8px;
-    padding: 7px 7px;
-    border-color: black;
-    background-color: white;
-    margin-left: 5px;
-    /* text-emphasis-color: white; */
-}
-
-.m-button{
-    border-radius: 8px;
-    padding: 7px 7px;
-    border-color: black;
-    background-color: black;
-    color: white;
-    margin-left: 5px;
-    /* text-emphasis-color: white; */
-}
-
-.l-button{
-    border-radius: 8px;
-    padding: 7px 7px;
-    border-color: black;
-    background-color: black;
-    color: white;
-    margin-left: 5px;
-    /* text-emphasis-color: white; */
-}
-
-.xl-button{
-    border-radius: 8px;
-    padding: 7px 7px;
-    border-color: black;
-    background-color: black;
-    color: white;
-    margin-left: 5px;
-    /* text-emphasis-color: white; */
-}
-
 .img {
-    width: 250px;
+    max-width: 100%;
     height: auto;
 }
