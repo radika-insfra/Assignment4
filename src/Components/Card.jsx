@@ -1,22 +1,37 @@
-import React from 'react';
-import lady from '../Assets/assign4image.webp';
-import Options from './Options';
-import './Card.css';
-import './Options.css';
+import React from "react";
+import lady from "../Assets/assign4image.webp";
+import Sizes from "./Sizes";
+import "./Card.css";
+// import "./Options.css";
 
-const Card = () => {
+const Card = ({ product }) => {
+  let { productName, productType, productPrice, productSizes } = product;
+
   return (
-    <div className='overViewContainer'>
-      <div className="Card">
-        <div className='img-container'>
-          <img src={lady} alt="lady" className='img' />
+    <div className="overViewContainer">
+      <div
+        // className="Card"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="img-container" style={{ display: "flex" }}>
+          <img src={lady} alt="lady" className="img" />
         </div>
-        <h3>Product 1 <strong>Dress</strong></h3>
-          <b>LKR: 3,000.00</b>
-          <Options/>
+        <h3>
+          {productName} <strong>{productType}</strong>
+        </h3>
+        <p>
+          <b>{productPrice}</b>
+        </p>
+        <Sizes availableSizes={productSizes} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
